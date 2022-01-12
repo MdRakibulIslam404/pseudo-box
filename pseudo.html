@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+
+    <style>
+        h1 {
+            color: goldenrod;
+        }
+
+        h1:hover {
+            color: greenyellow;
+            background-color: hotpink;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .middle-person:focus {
+            color: lightseagreen;
+            font-weight: 700;
+            background-color: maroon;
+        }
+
+        a:visited {
+            color: rgb(178, 32, 122);
+        }
+
+        li:first-child {
+            color: maroon;
+        }
+
+        li:last-child {
+            background-color: rgb(255, 174, 0);
+        }
+
+        /* li:nth-child(n){
+            color: darkcyan;
+        } */
+        li:nth-child(2n) {
+            color: darkcyan;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: magenta;
+        }
+        h3::before{
+            content: "Hello ";
+        }
+        .special::after{
+            content: " Gello";
+            background-color: rgb(0, 255, 98);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This ia normal</h1>
+    <input type="text">
+    <input class="middle-person" type="text">
+    <input type="text">
+
+    <br>
+
+    <h3>middle-size-border-1</h3>
+    <h3 class="special">middle-size-border-2</h3>
+    <h3>middle-size-border-3</h3>
+    <h3 class="special">middle-size-border-4</h3>
+    <h3>middle-size-border-5</h3>
+    <h3>middle-size-border-6</h3>
+
+    <a href="https://bbcjanala.ghoorilearning.com">bbc janala</a>
+    <a href="https://www.google.com">google</a>
+    <a href="https://bitly.com/">bitly</a>
+    <a href="https://www.you.com">YT</a>
+
+    <ul>
+        <li>alia</li>
+        <li>dalia</li>
+        <li>kalia</li>
+        <li>calia</li>
+        <li>jalaia</li>
+        <li>caraia</li>
+        <li>maria</li>
+        <li>faria</li>
+        <li>jaria</li>
+    </ul>
+</body>
+
+</html>
